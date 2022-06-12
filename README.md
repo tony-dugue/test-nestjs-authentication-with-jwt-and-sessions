@@ -45,9 +45,8 @@ $ yarn install
 
 ## Démarrer l'application
 ***
-(1) démarrer l'application docker
 
-(2) Démarrer le serveur de développement (à la racine du projet) :
+Démarrer le serveur de développement (à la racine du projet) :
 ```bash
 $ yarn start #ou $ npm run start
 ```
@@ -57,41 +56,10 @@ Ou avec le watch mode
 $ yarn start:dev #ou $ npm run start:dev
 ```
 
-(3) dans un 2nd terminal, démarrer la visualisation de la base de données avec prisma :
-```bash
-$ npx prisma studio
-```
-
-### Autres commandes
-
-Voir les containers docker en cours de fonctionnement (si la bdd est bien démarrée) :
-```bash
-$ docker ps
-```
-
-pour redémarrer la base de données (script auto pour tuer la bdd, la redémarrer et appliquer toutes les migrations) :
-```bash
-# après avoir démarrer l'application docker
-$ yarn db:dev:restart
-```
-
-Préparer l'application pour la production :
-```bash
-$ yarn start:prod #ou $ npm run start:prod
-```
-
-Générer une migration manuellement :
-```bash
-$ npx prisma migrate dev
-```
-
 ## Ressources utilisées dans le projet
 ***
 
-[docker](https://www.docker.com/) <br />
-Base de données : [postgres](https://www.postgresql.org/) <br />
 Authentification middleware pour Nodejs : [passport.js](https://www.passportjs.org/) <br />
-Typescript ORM : [prisma](https://www.prisma.io/) <br />
 
 ## Nestjs Support
 ***
